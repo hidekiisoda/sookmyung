@@ -1,5 +1,5 @@
 /*
-   Metronome & Tuner with OLED Display
+   Metronome & Tuner with OLED Display Ver 1.2
    Prof. Hideki Isoda
    Sookmyung Women's University
 */
@@ -9,9 +9,8 @@
 U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE | U8G_I2C_OPT_DEV_0); // Activate I2C for OLED
 
 const int pitch = 440;        // for Tuner Reference Pitch (440Hz A4)
-const int frequency = 880;    // for Metronome (A5)
+const int frequency = 880;    // for Metronome (880Hz A5)
 const int duration = 50;      // Beat duration
-const int gate = 5;           // Relay to gate noise while noTone
 const int speakerPin = 6;     // Speaker (use 500Ω potentiometer for volume control)
 const int ledPin = 12;        // Green LED to indicate beats and activation of reference pitch
 const int potPin = 0;         // 10KΩ potentiometer for selecting the tempo preset
